@@ -41,6 +41,8 @@ try:
                 camera.capture('/home/murphy/image' + str(i) + '.jpg')                                    #拍照
                 i=i+1
                 print("拍照成功")
+                if i > 10:
+                    i = 1
                 sleep(5)
             else:
                 p.ChangeDutyCycle(100)
